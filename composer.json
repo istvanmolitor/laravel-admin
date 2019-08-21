@@ -1,0 +1,24 @@
+{
+  "name": "istvanmolitor/laravel-admin",
+  "description": "Laravel admin",
+  "type": "libary",
+  "authors": [
+    {
+      "name": "Molitor István",
+      "email": "istvanmolitor@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "IstvanMolitor\\LaravelAdmin\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IstvanMolitor\\LaravelAdmin\\Providers\\LaravelAdminServiceProvider"
+      ]
+    }
+  }
+}
