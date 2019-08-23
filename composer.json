@@ -8,7 +8,9 @@
       "email": "istvanmolitor@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "istvanmolitor/laravel-menu": "dev-master"
+  },
   "autoload": {
     "psr-4": {
       "IstvanMolitor\\LaravelAdmin\\": "src"
