@@ -4,7 +4,7 @@
         @include('admin::layout.includes.header')
     </header>
 
-    <div id="main">
+    <div id="main" class="container">
         @yield('content')
     </div>
 
