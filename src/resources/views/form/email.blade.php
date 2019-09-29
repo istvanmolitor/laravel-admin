@@ -1,4 +1,4 @@
 <div class="form-group">
     {!!  Form::label($name, $label, ['class' => 'control-label']) !!}
-    {!! Form::email($name, '', ['class' => 'form-control']) !!}
+    {!! Form::email($name, isset($value) ? $value : '', ['class' => 'form-control']) !!}
 </div>

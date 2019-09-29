@@ -3,7 +3,6 @@
 namespace IstvanMolitor\LaravelAdmin\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use IstvanMolitor\LaravelUser\Libs\Acl;
 
 class LaravelAdminServiceProvider extends ServiceProvider
 {
@@ -17,12 +16,5 @@ class LaravelAdminServiceProvider extends ServiceProvider
             __DIR__ . '/../resources/icons' => base_path('resources/icons'),
             __DIR__ . '/../resources/sass' => base_path('resources/sass'),
         ]);
-    }
-
-    public function register()
-    {
-        $this->app->singleton('Acl', function ($app) {
-            return new Acl();
-        });
     }
 }
