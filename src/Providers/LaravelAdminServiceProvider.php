@@ -12,9 +12,9 @@ class LaravelAdminServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'admin');
 
         $this->publishes([
-            __DIR__ . '/../resources/views' => base_path('resources/views/vendor/admin'),
-            __DIR__ . '/../resources/icons' => base_path('resources/icons'),
-            __DIR__ . '/../resources/sass' => base_path('resources/sass'),
+            //__DIR__ . '/../resources/views' => base_path('resources/views/vendor/admin'),
+            //__DIR__ . '/../resources/icons' => base_path('resources/icons'),
+            __DIR__ . '/../resources/adminlte' => base_path('public/adminlte'),
         ]);
     }
 }
