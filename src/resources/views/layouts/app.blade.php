@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    @include('admin::layout.includes.head')
+    @include('admin::layouts.includes.head')
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-@include('admin::layout.includes.navbar')
+@include('admin::layouts.includes.navbar')
 
-@include('admin::layout.includes.sidebar')
+@include('admin::layouts.includes.sidebar')
 
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -39,7 +39,7 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-@include('admin::layout.includes.footer')
+@include('admin::layouts.includes.footer')
 
 <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
@@ -49,6 +49,6 @@
 </div>
 <!-- ./wrapper -->
 
-@include('admin::layout.includes.scripts')
+@include('admin::layouts.includes.scripts')
 </body>
 </html>
