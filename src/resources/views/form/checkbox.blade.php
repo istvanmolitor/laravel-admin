@@ -1,6 +1,9 @@
 <div class="form-group">
-    <div class="form-check">
-        {!! Form::checkbox($name, 'true',  isset($value) ? $value : FALSE, ['class' => 'form-check-input']) !!}
-        {!!  Form::label($name, $label, ['class' => 'form-check-label']) !!}
+    <div class="custom-control custom-switch">
+        {!! Form::checkbox($name, 'true',  isset($value) ? $value : FALSE, ['class' => 'custom-control-input']) !!}
+        {!!  Form::label($name, $label, ['class' => 'custom-control-label']) !!}
+        @include('admin::form.field_error', [
+            'name' => $name
+        ])
     </div>
 </div>

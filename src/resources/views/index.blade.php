@@ -1,4 +1,4 @@
-@extends('admin::layouts.layout')
+@extends('admin::layouts.app')
 
 @section('title')
     Admin
@@ -12,5 +12,5 @@
 @stop
 
 @section('content')
-    {!! $menu !!}
+
 @stop
