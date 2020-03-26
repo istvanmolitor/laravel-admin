@@ -1,3 +1,3 @@
 <?php
 
-Route::get('admin', 'IstvanMolitor\LaravelAdmin\Http\Controllers\AdminController@index')->name('admin.index');
+Route::get('dashboard', 'IstvanMolitor\LaravelAdmin\Http\Controllers\AdminController@dashboard')->name('admin.dashboard');

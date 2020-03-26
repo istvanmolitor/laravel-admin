@@ -3,34 +3,21 @@
 <head>
     @include('admin::layouts.includes.head')
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
+<body>
+<div class="container-fluid">
+    @include('admin::layouts.includes.header')
 
-@include('admin::layouts.includes.navbar')
-
-@include('admin::layouts.includes.sidebar')
-
-<!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">@yield('title')</h1>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        @yield('breadcrumb')
-                    </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
+    <div class="row">
+        <div class="col-md-4">
+            @include('admin::layouts.includes.sidebar')
         </div>
-        <!-- /.content-header -->
+        <div class="col-md-8">
 
-        <!-- Main content -->
-        <section class="content">
-            <div class="container-fluid">
+            @yield('breadcrumb')
 
+            <h1 class="m-0 text-dark">@yield('title')</h1>
+
+            <section>
                 @if(session()->has('success'))
                     <div class="alert alert-success alert-dismissible">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
@@ -39,22 +26,12 @@
                 @endif
 
                 @yield('content')
-
-            </div><!-- /.container-fluid -->
-        </section>
-        <!-- /.content -->
+            </section>
+        </div>
     </div>
-    <!-- /.content-wrapper -->
-@include('admin::layouts.includes.footer')
 
-<!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
+    @include('admin::layouts.includes.footer')
 </div>
-<!-- ./wrapper -->
-
 @include('admin::layouts.includes.scripts')
 </body>
 </html>
